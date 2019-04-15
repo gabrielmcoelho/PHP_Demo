@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Contact page</title>
-</head>
-<body>
-	<h1>Contact Us</h1>
-</body>
-</html>
+<?php require 'views/partials/header.php'; ?>
+	
+<h1>Contact Us</h1>
+
+<?php require 'views/partials/footer.php'; ?>

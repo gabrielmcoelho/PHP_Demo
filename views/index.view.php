@@ -1,38 +1,19 @@
-<!DOCTYPE html>
-<html>
+<?php require 'views/partials/header.php'; ?>
 
-<head>
-	<meta charset="utf-8">
-	<title>Document</title>
-	<style type="text/css">
-		header {
-			background: #e3e3e3;
-			text-align: center;
-			padding: 2em;
-		}
-	</style>
-</head>
+<h1>Today's Tasks</h1>
 
-<body>
+<ul>
+	<?php foreach ($tasks as $task) : ?>
+	<li>
+		<strong>
+			<?php if ($task->completed) : ?>
+			<strike> <?= $task->description ?> </strike>
+			<?php else : ?>
+			<?= $task->description ?>
+			<?php endif; ?>
+		</strong>
+	</li>
+<?php endforeach; ?>
+</ul>
 
-	<header>
-		<h1>Today's Tasks</h1>
-	</header>
-
-	<ul>
-		<?php foreach ($tasks as $task) : ?>
-		<li>
-			<strong>
-				<?php if ($task->completed) : ?>
-				<strike> <?= $task->description ?> </strike>
-				<?php else : ?>
-				<?= $task->description ?>
-				<?php endif; ?>
-			</strong>
-		</li>
-		<?php endforeach; ?>
-	</ul>
-
-</body>
-
-</html>
+<?php require 'views/partials/footer.php'; ?>
