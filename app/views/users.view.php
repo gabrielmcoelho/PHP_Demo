@@ -1,4 +1,4 @@
-<?php require 'views/partials/header.php'; ?>
+<?php require 'app/views/partials/header.php'; ?>
 
 <ul>
 	<?php foreach ($users as $user) : ?>
@@ -8,9 +8,9 @@
 
 <h1>Submit your name</h1>
 
-<form method="POST" action="/names">
+<form method="POST" action="/users">
 	<input name="name"></input>
 	<button type="submit"/>Submit</button>
-</form>
+</form> 
 
-<?php require 'views/partials/footer.php'; ?>
+<?php require 'app/views/partials/footer.php'; ?>

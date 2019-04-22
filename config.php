@@ -5,7 +5,7 @@ $config = [
 		'connection' => 'mysql:host=127.0.0.1',
 		'dbname' => 'mytodo',
 		'username' => 'root',
-		'password' => 'dash6880',
+		'password' => '123mysql321',
 		'options' => [
 			PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING
 		]
